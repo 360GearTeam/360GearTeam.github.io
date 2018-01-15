@@ -276,7 +276,7 @@ curl -v  -H 'Cookie:uid=paYh93tqw4' -d 'act=signin&lang=zh_CN&outemail=EMAIL_ADD
 
 按照代码逻辑，应该需要发送第三个包'act=adddev'，这个包会将路由器的web管理密码发送给Mydlink云端，这样攻击者访问云端时才能获取到该路由器的管理密码。但实际测试中我们只需要发送前两个包就能完成注册，也能获取到web管理密码，佐证如下：
 
-![login](http://wx1.sinaimg.cn/mw690/a750c5f9gy1fmd4pzeyl5j216h0mzjzm.jpg)
+![login](https://wx1.sinaimg.cn/mw690/a750c5f9gy1fmd4pzeyl5j216h0mzjzm.jpg)
 
 ### 总结与思考
 
@@ -503,7 +503,7 @@ L0K03Bik6/rxBA6n4v9drM1hKAF+0wET
 
 但我认为这两个文件并非stunnel服务运行时真正使用的证书，它们只是在发版时未被清理的临时文件，可以通过浏览器去访问https服务，查看证书内容：
 
-![acccess_stunnel_server](http://wx1.sinaimg.cn/mw690/a750c5f9gy1fmfesfij7aj20ll0n2t9t.jpg)
+![acccess_stunnel_server](https://wx1.sinaimg.cn/mw690/a750c5f9gy1fmfesfij7aj20ll0n2t9t.jpg)
 
 不难发现两个证书并非同一个文件，其序列号、有效期、签发者信息都完全对不上，所以我认为作者描述的这个漏洞不存在。
 
